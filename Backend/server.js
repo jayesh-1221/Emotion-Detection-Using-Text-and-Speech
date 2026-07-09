@@ -11,7 +11,9 @@ const port = Number(process.env.PORT) || 3001
 
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN || true,
+     origin: [
+      "https://final-year-project-seven-mu.vercel.app",
+    ],
   }),
 )
 app.use(express.json({ limit: '1mb' }))
